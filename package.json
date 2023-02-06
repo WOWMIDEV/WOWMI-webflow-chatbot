@@ -13,7 +13,7 @@
     "pretty-style": "npx prettier --write ./src/scss",
     "pretty-script": "npx prettier --write ./src/scripts",
     "browser": "rm -rf ./development && NODE_ENV=development && parcel src/index.html --out-dir development/ --port 4242",
-    "build:prod": "npm run clear && NODE_ENV=production && parcel build src/index.html --no-cache --no-source-maps --out-dir dist/ --public-url ./",
+    "build:prod": "npm run clear && NODE_ENV=production && parcel build src/index.html --no-cache --out-dir dist/ --public-url ./",
     "build-script": "NODE_ENV=production && parcel build src/scripts/index.js --no-cache --no-source-maps --out-file index.js --out-dir dist --public-url ./",
     "build-styles": "NODE_ENV=production && parcel build src/scss/styles.scss --no-cache --no-source-maps --out-file styles.css --out-dir dist --public-url ./",
     "build:assets": "npm run clear && npm-run-all build-*"

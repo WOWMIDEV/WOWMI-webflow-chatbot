@@ -273,3 +273,4 @@ module.exports={id:3,name:"Realtor",bot:{0:{content:["Hi there! &#x1f44b; &#x1f4
 },{"@babel/runtime-corejs2/helpers/asyncToGenerator":"OYLD","@babel/runtime-corejs2/regenerator":"i9LV","@babel/runtime-corejs2/core-js/promise":"eOfj","../plugins/chatbot":"VEiB","../config/script":"A6Jb","../config/chabot":"vvZ4"}],"g2Hq":[function(require,module,exports) {
 "use strict";require("./core/process.js");
 },{"./core/process.js":"iKqu"}]},{},["g2Hq"], null)
+//# sourceMappingURL=../js/scripts.1e93786d.js.map
