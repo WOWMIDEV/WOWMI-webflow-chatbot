@@ -2413,7 +2413,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var chatTemplate = function chatTemplate(name) {
-  return "<div class=\"chatbot__title\">\n              <span class=\"chatbot__name\">".concat(name, "</span>\n              <span class=\"chatbot__reset\">\u21BA</span>\n              <span class=\"chatbot__close\">&times;</span>\n          </div>\n          <div class=\"chatbot__wrapper\">\n            <div class=\"chatbot__items\"></div>\n          </div>\n          <div class=\"chatbot__footer\">\n            <input class=\"chatbot__input\" type=\"text\" disabled placeholder=\"Reply to Gold Financial\">\n            <button class=\"chatbot__submit\" type=\"button\" disabled></button>\n          </div>");
+  return "<div class=\"chatbot__title\">\n              <span class=\"chatbot__name\">".concat(name, "</span>\n              <span class=\"chatbot__reset\">\u21BA</span>\n              <span class=\"chatbot__close\">&times;</span>\n          </div>\n          <div class=\"chatbot__wrapper\">\n            <div class=\"chatbot__items\"></div>\n          </div>\n          <div class=\"chatbot__footer\">\n            <input class=\"chatbot__input\" type=\"text\" disabled placeholder=\"Reply to Watermark\">\n            <button class=\"chatbot__submit\" type=\"button\" disabled></button>\n          </div>");
 };
 var _default = chatTemplate;
 exports.default = _default;
