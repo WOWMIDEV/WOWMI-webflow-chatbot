@@ -1,0 +1,57 @@
+{
+  "id": 2,
+  "name": "Recruiter",
+  "bot": {
+    "0": {
+      "content": "Hi there! Love to talk with you. Let me grab some details. What's your name? &#x1f600;",
+      "human": [0]
+    },
+    "1": {
+      "content": "Hey {{name}}! What's your current annual production volume?",
+      "human": [1, 2, 3, 4]
+    },
+    "2": {
+      "content": "Why don’t we schedule an appointment to see how we can take your lending career to the next level. Interested?",
+      "human": [5, 6]
+    },
+    "4": {
+      "content": "<p class='chatbot__paragraph'>Awesome!</p> {{link}} <p class='chatbot__paragraph'>Have a great day! &#x1f44b;</p>",
+      "human": []
+    },
+    "5": {
+      "content": "No worries. <br> Have a great day! &#x1f44b;",
+      "human": []
+    }
+  },
+  "human": {
+    "0": {
+      "content": "",
+      "bot": 1,
+      "name": "name"
+    },
+    "1": {
+      "content": "$1 - $5m",
+      "bot": 2
+    },
+    "2": {
+      "content": "$5 - $15m",
+      "bot": 2
+    },
+    "3": {
+      "content": "$15 - $35m",
+      "bot": 2
+    },
+    "4": {
+      "content": "$35m+",
+      "bot": 2
+    },
+    "5": {
+      "content": "Let’s do it!",
+      "bot": 4
+    },
+    "6": {
+      "content": "I’m good for now.",
+      "bot": 5
+    }
+  }
+}

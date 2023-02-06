@@ -1,0 +1,8 @@
+.chatbot__content a {
+  color: blue;
+  @extend %transition-2;
+  text-decoration: underline!important;
+  &:hover {
+    text-decoration: none!important;
+  }
+}

@@ -1,0 +1,28 @@
+.chatbot__time {
+  font-size: 10px;
+  opacity: 0;
+  //transform: translateY(-50%);
+  @extend %transition-3;
+}
+
+.chatbot__item_bot .chatbot__time {
+}
+
+.chatbot__item_human .chatbot__time {
+}
+
+.chatbot__item_bot {
+  &:hover {
+    .chatbot__time {
+      opacity: 0.8;
+    }
+  }
+}
+
+.chatbot__item_human {
+  &:hover {
+    .chatbot__time {
+      opacity: 0.8;
+    }
+  }
+}

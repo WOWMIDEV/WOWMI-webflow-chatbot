@@ -1,0 +1,15 @@
+.chatbot__submit {
+  width: 24px;
+  height: 24px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  opacity: 0.6;
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url($send);
+  border: 1px solid transparent;
+  background-color: transparent;
+  transition: opacity 0.15s ease-in-out;
+}

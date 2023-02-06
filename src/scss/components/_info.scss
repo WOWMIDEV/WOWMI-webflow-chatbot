@@ -1,0 +1,18 @@
+.chatbot__info {
+  position: absolute;
+  top: -10px;
+  opacity: 0;
+  animation: to-visible 0.5s ease-in-out 1 forwards;
+}
+
+.chatbot__item_bot {
+  .chatbot__info {
+    left: 40px;
+  }
+}
+
+.chatbot__item_human {
+  .chatbot__info {
+    right: 5px;
+  }
+}

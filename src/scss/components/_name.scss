@@ -1,0 +1,10 @@
+.chatbot__name {
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.chatbot__item_human {
+  .chatbot__name {
+    display: none;
+  }
+}

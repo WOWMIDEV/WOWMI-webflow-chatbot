@@ -1,0 +1,140 @@
+{
+  "name": "wowmi-chatbot",
+  "version": "1.0.0",
+  "main": "index.html",
+  "description": "DigitaButlers. Chatbot WOWMI",
+  "notes": {
+    "server": "открыть проект на других устройствах -> 192.168.1.49:4242"
+  },
+  "scripts": {
+    "clear": "rm -rf ./dist",
+    "lint": "npx eslint ./src/scripts",
+    "lint-fix": "npx eslint --fix ./src/scripts",
+    "pretty-style": "npx prettier --write ./src/scss",
+    "pretty-script": "npx prettier --write ./src/scripts",
+    "browser": "rm -rf ./development && NODE_ENV=development && parcel src/index.html --out-dir development/ --port 4242",
+    "build:prod": "npm run clear && NODE_ENV=production && parcel build src/index.html --no-cache --no-source-maps --out-dir dist/ --public-url ./",
+    "build-script": "NODE_ENV=production && parcel build src/scripts/index.js --no-cache --no-source-maps --out-file index.js --out-dir dist --public-url ./",
+    "build-styles": "NODE_ENV=production && parcel build src/scss/styles.scss --no-cache --no-source-maps --out-file styles.css --out-dir dist --public-url ./",
+    "build:assets": "npm run clear && npm-run-all build-*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "autoprefixer": "^9.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-custom-dist-structure": "^1.1.17",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "sass": "^1.32.13",
+    "postcss-modules": "^1.4.1",
+    "prettier": "^2.4.0"
+  },
+  "sass": {
+    "includePaths": [
+      "node_modules"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "> 1%",
+          "last 4 versions",
+          "ie >= 9"
+        ]
+      }
+    }
+  },
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "minifyFontValues": {
+          "removeQuotes": false
+        },
+        "normalizeUrl": false
+      }
+    ]
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "corejs": 2,
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".css.map": "css",
+      ".js": "js",
+      ".js.map": "js",
+      ".ttf": "fonts",
+      "img": [
+        ".jpg",
+        ".png",
+        ".svg",
+        ".gif",
+        ".ttf",
+        ".bmp"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [
+        ".file",
+        ".extensions"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "imagemin": {
+    "gifsicle": {
+      "optimizationLevel": 2,
+      "interlaced": false,
+      "colors": 10
+    },
+    "mozjpeg": {
+      "progressive": true,
+      "quality": 40
+    },
+    "pngquant": {
+      "quality": [
+        0.35,
+        0.5
+      ]
+    },
+    "svgo": {
+      "plugins": [
+        {
+          "removeViewBox": false
+        },
+        {
+          "cleanupIDs": true
+        }
+      ]
+    },
+    "webp": {
+      "quality": 10
+    }
+  },
+  "htmlnano": {
+    "collapseAttributeWhitespace": false,
+    "collapseBooleanAttributes": false,
+    "collapseWhitespace": false,
+    "minifyJson": false,
+    "minifySvg": false
+  }
+}

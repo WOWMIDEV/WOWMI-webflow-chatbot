@@ -1,0 +1,36 @@
+.chatbot__title {
+  display: flex;
+  align-items: center;
+  padding: 18px 0 18px 60px;
+  position: relative;
+  background-color: $color-theme-10;
+  font-size: inherit;
+  font-weight: 500;
+
+  &:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-theme-5;
+    background-image: url($logo);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 2px $color-theme-5;
+  }
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 38px;
+    top: 58%;
+    background-color: #2eec07;
+    border-radius: 50%;
+  }
+}

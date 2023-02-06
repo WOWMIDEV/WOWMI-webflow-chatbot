@@ -1,0 +1,42 @@
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 480px;
+  position: fixed;
+  bottom: 74px;
+  right: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: $color-theme-1;
+  line-height: 1.2;
+  background-color: #fafafa;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+  transform: translate(-30px, 30px);
+  box-shadow: 0 10px 20px 0 transparentize($color-theme-1, 0.9);
+  @extend %transition-3;
+
+  @include media-mobile-x {
+    width: 100%;
+    transform: translate(0px, 80px);
+  }
+}
+
+.chatbot.active {
+  transform: translate(-30px, -30px);
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+
+  @include media-mobile-x {
+    transform: translate(0px, 40px);
+  }
+}
+
+.chatbot__wrapper {
+  padding-left: 16px;
+}
