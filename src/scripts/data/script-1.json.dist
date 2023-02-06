@@ -1,0 +1,62 @@
+{
+  "id": 1,
+  "name": "Originator",
+  "bot": {
+    "0": {
+      "content": "Are you ready to start your homeownership journey? &#x1f3e0;",
+      "human": [0, 1, 2]
+    },
+    "1": {
+      "content": "I'll need a few pieces if information to get you on your way. What is your name?",
+      "human": [3]
+    },
+    "2": {
+      "content": "Hey {{name}}. Why are you thinking about refinancing?",
+      "human": [4, 5, 6]
+    },
+    "3": {
+      "content": "{{member}} can help you start your journey here! <br> <br> {{link}} <br> Have a great day! &#x1f44b;",
+      "human": []
+    },
+    "4": {
+      "content": "I'll need a few pieces if information to get you on your way. What is your name?",
+      "human": [7]
+    },
+    "5": {
+      "content": "Hey {{name}}. Are you an existing homeowner?",
+      "human": [8, 9]
+    },
+    "6": {
+      "content": "Have you found a home or are you still looking for one?",
+      "human": [10, 11, 12]
+    }
+  },
+  "human": {
+    "0": {
+      "content": "Yep! I'm Thinking About Refinancing &#x1f4b5;",
+      "bot": 1
+    },
+    "1": {
+      "content": "Yessss! I Want To Schedule A Mortgage Consultation &#x1f600;",
+      "bot": 4
+    },
+    "2": {
+      "content": "Eh. I'm Thinking About Getting A Mortgage &#x1f4b5;",
+      "bot": 4
+    },
+    "3": { "content": "", "bot": 2, "name": "name" },
+    "4": { "content": "I Want A Better Rate", "bot": 3 },
+    "5": { "content": "My Rate is too High", "bot": 3 },
+    "6": { "content": "Just Doing Some Research", "bot": 3 },
+    "7": { "content": "", "bot": 5, "name": "name" },
+    "8": { "content": "Yes", "bot": 3 },
+    "9": { "content": "No", "bot": 6 },
+    "10": { "content": "I haven't started", "bot": 3 },
+    "11": { "content": "I'm still looking", "bot": 3 },
+    "12": { "content": "I found a home", "bot": 3 },
+    "13": {
+      "content": "Again \uD83D\uDE80",
+      "bot": 2
+    }
+  }
+}

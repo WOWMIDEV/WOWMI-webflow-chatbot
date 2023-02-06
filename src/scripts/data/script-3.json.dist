@@ -1,0 +1,32 @@
+{
+  "id": 3,
+  "name": "Realtor",
+  "bot": {
+    "0": {
+      "content": [
+        "Hi there! &#x1f44b; &#x1f44b; Love to get your appointment scheduled, but before I do, let me gram a few pieces of information. \uD83D\uDE00",
+        "What's your name? &#x1f600;"
+      ],
+      "human": [0]
+    },
+    "1": {
+      "content": "Awesome, {{name}}. What is you need help with?",
+      "human": [1, 2, 3, 4]
+    },
+    "2": {
+      "content": "Perfect! <br> <br> {{link}} <br> Have a great day! &#x1f44b;",
+      "human": []
+    }
+  },
+  "human": {
+    "0": { "content": "", "bot": 1, "name": "name" },
+    "1": { "content": "Helping me find a home &#x1f3e0;", "bot": 2 },
+    "2": { "content": "Selling my home! &#x1f911;", "bot": 2 },
+    "3": { "content": "Find a rental property &#x1f642;", "bot": 2 },
+    "4": { "content": "Getting a mortgage &#x1f4b0;", "bot": 2 },
+    "5": {
+      "content": "Again \uD83D\uDE80",
+      "bot": 1
+    }
+  }
+}
