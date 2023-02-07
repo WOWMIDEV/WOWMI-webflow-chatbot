@@ -15,8 +15,8 @@
     transform: translateY(-50%);
     background-image:  url($logo);
     background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: center;
+    background-size: 90%;
+    background-position: 2px 2px;
     border-radius: 50%;
     box-shadow: inset 0px 0px 0px 2px $color-theme-9;
     animation: to-visible 0.3s ease-in-out 1 forwards;

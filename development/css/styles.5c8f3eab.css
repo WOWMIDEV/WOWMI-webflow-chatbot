@@ -647,8 +647,8 @@ button {
           transform: translateY(-50%);
   background-image: url("/img/logo.cecc779a.png");
   background-repeat: no-repeat;
-  background-size: 120%;
-  background-position: center;
+  background-size: 90%;
+  background-position: 2px 2px;
   border-radius: 50%;
   -webkit-box-shadow: inset 0px 0px 0px 2px #3d3935;
           box-shadow: inset 0px 0px 0px 2px #3d3935;
@@ -749,7 +749,7 @@ button {
   top: 0;
   left: 0;
   background-image: url("/img/logo.cecc779a.png");
-  background-size: 75%;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
