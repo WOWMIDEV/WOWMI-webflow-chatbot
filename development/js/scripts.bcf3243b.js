@@ -2413,7 +2413,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var chatTemplate = function chatTemplate(name) {
-  return "<div class=\"chatbot__title\">\n              <span class=\"chatbot__name\">".concat(name, "</span>\n              <span class=\"chatbot__reset\">\u21BA</span>\n              <span class=\"chatbot__close\">&times;</span>\n          </div>\n          <div class=\"chatbot__wrapper\">\n            <div class=\"chatbot__items\"></div>\n          </div>\n          <div class=\"chatbot__footer\">\n            <input class=\"chatbot__input\" type=\"text\" disabled placeholder=\"Reply to Gold Financial\">\n            <button class=\"chatbot__submit\" type=\"button\" disabled></button>\n          </div>");
+  return "<div class=\"chatbot__title\">\n              <span class=\"chatbot__name\">".concat(name, "</span>\n              <span class=\"chatbot__reset\">\u21BA</span>\n              <span class=\"chatbot__close\">&times;</span>\n          </div>\n          <div class=\"chatbot__wrapper\">\n            <div class=\"chatbot__items\"></div>\n          </div>\n          <div class=\"chatbot__footer\">\n            <input class=\"chatbot__input\" type=\"text\" disabled placeholder=\"Reply to Cardinal Financial\">\n            <button class=\"chatbot__submit\" type=\"button\" disabled></button>\n          </div>");
 };
 var _default = chatTemplate;
 exports.default = _default;
@@ -2926,82 +2926,67 @@ var _default = SimpleChatbot;
 exports.default = _default;
 },{"@babel/runtime-corejs2/core-js/array/is-array":"../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js","@babel/runtime-corejs2/core-js/json/stringify":"../node_modules/@babel/runtime-corejs2/core-js/json/stringify.js","../templates/chat":"scripts/templates/chat.js","../templates/content":"scripts/templates/content.js","../templates/button":"scripts/templates/button.js","../templates/common":"scripts/templates/common.js","../config/chatName":"scripts/config/chatName.js","../helpers/timeDate":"scripts/helpers/timeDate.js","../helpers/time":"scripts/helpers/time.js"}],"scripts/data/script-1.json":[function(require,module,exports) {
 module.exports = {
-  "id": 4,
+  "id": 1,
   "name": "Originator",
   "bot": {
     "0": {
-      "content": "Ready to retire your way? &#x1f3e0;",
-      "human": [0]
+      "content": "Are you ready to start your homeownership journey? &#x1f3e0;",
+      "human": [0, 1, 2]
     },
     "1": {
-      "content": "Great! Before we get started, how did you hear about me?",
-      "human": [1, 2, 3, 4]
+      "content": "I'll need a few pieces if information to get you on your way. What is your name?",
+      "human": [3]
     },
     "2": {
-      "content": "Are you interested in a reverse mortgage on your existing home or using it to purchase a new home?",
-      "human": [5, 6]
+      "content": "Hey {{name}}. Why are you thinking about refinancing?",
+      "human": [4, 5, 6]
     },
     "3": {
-      "content": "I’ll need a few pieces of information to get you on your way. What is your name?",
-      "human": [7]
+      "content": "{{member}} can help you start your journey here! <br> <br> {{link}} <br> Have a great day! &#x1f44b;",
+      "human": []
     },
     "4": {
-      "content": "I’ll need a few pieces of information to get you on your way. What is your name?",
-      "human": [8]
+      "content": "I'll need a few pieces if information to get you on your way. What is your name?",
+      "human": [7]
     },
     "5": {
-      "content": "Hi {{name}}. In order to determine what you qualify for, we’ll need to know your age. What is your age?",
-      "human": [9]
+      "content": "Hey {{name}}. Are you an existing homeowner?",
+      "human": [8, 9]
     },
     "6": {
-      "content": "Hi {{name}}. In order to determine what you qualify for, we’ll need to know your age. What is your age?",
-      "human": [10]
-    },
-    "7": {
-      "content": "Great! {{name}}, why are you thinking about a reverse mortgage?",
-      "human": [11, 12, 13, 14]
-    },
-    "8": {
-      "content": "Great! {{name}}, do you have a realtor that you’re working with yet?",
-      "human": [15, 16]
-    },
-    "9": {
-      "content": "{{member}} can help you start your journey here! <br> {{link}} <br> Have a great day!",
-      "human": []
-    },
-    "10": {
-      "content": "There are a number of things you need to do before you even start looking at homes.<br> {{member}} can show all the steps here! <br> {{link}} <br> Have a great day!",
-      "human": []
+      "content": "Have you found a home or are you still looking for one?",
+      "human": [10, 11, 12]
     }
   },
   "human": {
     "0": {
-      "content": "Yes! I’d like to find out more about a reverse mortgage &#x1f4b5;",
+      "content": "Yep! I'm Thinking About Refinancing &#x1f4b5;",
       "bot": 1
     },
     "1": {
-      "content": ["Realtor"],
-      "bot": 2
+      "content": "Yessss! I Want To Schedule A Mortgage Consultation &#x1f600;",
+      "bot": 4
     },
     "2": {
-      "content": "Financial Advisor",
-      "bot": 2
+      "content": "Eh. I'm Thinking About Getting A Mortgage &#x1f4b5;",
+      "bot": 4
     },
     "3": {
-      "content": "Family/Friend",
-      "bot": 2
+      "content": "",
+      "bot": 2,
+      "name": "name"
     },
     "4": {
-      "content": "My own research",
-      "bot": 2
+      "content": "I Want A Better Rate",
+      "bot": 3
     },
     "5": {
-      "content": "I’m interested in a reverse mortgage on my existing home.",
+      "content": "My Rate is too High",
       "bot": 3
     },
     "6": {
-      "content": "I’m interested in using a reverse to purchase a new home.",
-      "bot": 4
+      "content": "Just Doing Some Research",
+      "bot": 3
     },
     "7": {
       "content": "",
@@ -3009,43 +2994,28 @@ module.exports = {
       "name": "name"
     },
     "8": {
-      "content": "",
-      "bot": 6,
-      "name": "name"
+      "content": "Yes",
+      "bot": 3
     },
     "9": {
-      "content": "",
-      "bot": 7,
-      "age": "age"
+      "content": "No",
+      "bot": 6
     },
     "10": {
-      "content": "",
-      "bot": 8,
-      "age": "age"
+      "content": "I haven't started",
+      "bot": 3
     },
     "11": {
-      "content": ["I want to eliminate my monthly mortgage payments."],
-      "bot": 9
+      "content": "I'm still looking",
+      "bot": 3
     },
     "12": {
-      "content": ["I’d love some extra income in retirement."],
-      "bot": 9
+      "content": "I found a home",
+      "bot": 3
     },
     "13": {
-      "content": ["I want to have funds available for emergencies."],
-      "bot": 9
-    },
-    "14": {
-      "content": ["Just doing some research."],
-      "bot": 9
-    },
-    "15": {
-      "content": ["Yes, I have a realtor."],
-      "bot": 10
-    },
-    "16": {
-      "content": ["No, I don’t have a realtor yet."],
-      "bot": 10
+      "content": "Again \uD83D\uDE80",
+      "bot": 2
     }
   }
 };
@@ -3411,7 +3381,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56566" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56389" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
