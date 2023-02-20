@@ -237,7 +237,7 @@ var r=require("../../modules/_core"),i=r.JSON||(r.JSON={stringify:JSON.stringify
 },{"../../modules/_core":"zKeE"}],"E09K":[function(require,module,exports) {
 module.exports=require("core-js/library/fn/json/stringify");
 },{"core-js/library/fn/json/stringify":"Q17y"}],"t9vp":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=function(t){return'<div class="chatbot__title">\n              <span class="chatbot__name">'.concat(t,'</span>\n              <span class="chatbot__reset">↺</span>\n              <span class="chatbot__close">&times;</span>\n          </div>\n          <div class="chatbot__wrapper">\n            <div class="chatbot__items"></div>\n          </div>\n          <div class="chatbot__footer">\n            <input class="chatbot__input" type="text" disabled placeholder="Reply to Watermark">\n            <button class="chatbot__submit" type="button" disabled></button>\n          </div>')},s=t;exports.default=s;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=function(t){return'<div class="chatbot__title">\n              <span class="chatbot__name">'.concat(t,'</span>\n              <span class="chatbot__reset">↺</span>\n              <span class="chatbot__close">&times;</span>\n          </div>\n          <div class="chatbot__wrapper">\n            <div class="chatbot__items"></div>\n          </div>\n          <div class="chatbot__footer">\n            <input class="chatbot__input" type="text" disabled placeholder="Reply to Geneva">\n            <button class="chatbot__submit" type="button" disabled></button>\n          </div>')},s=t;exports.default=s;
 },{}],"q8aF":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=function(){return'<div class="chatbot__item chatbot__item_{{type}}">\n            <div class="chatbot__content chatbot__content_{{type}}{{state}}">{{content}}</div>\n            <div class="chatbot__info">\n                <span class="chatbot__name">{{name}}</span>\n                <span class="chatbot__time">{{time}}</span>\n            </div>\n          </div>'},e=t;exports.default=e;
 },{}],"vyj1":[function(require,module,exports) {
@@ -273,4 +273,4 @@ module.exports={id:3,name:"Realtor",bot:{0:{content:["Hi there! &#x1f44b; &#x1f4
 },{"@babel/runtime-corejs2/helpers/asyncToGenerator":"OYLD","@babel/runtime-corejs2/regenerator":"i9LV","@babel/runtime-corejs2/core-js/promise":"eOfj","../plugins/chatbot":"VEiB","../config/script":"A6Jb","../config/chabot":"vvZ4"}],"g2Hq":[function(require,module,exports) {
 "use strict";require("./core/process.js");
 },{"./core/process.js":"iKqu"}]},{},["g2Hq"], null)
-//# sourceMappingURL=../js/scripts.dd250803.js.map
+//# sourceMappingURL=../js/scripts.0e9aad04.js.map
