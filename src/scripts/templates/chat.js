@@ -7,7 +7,7 @@ const chatTemplate = (name) => `<div class="chatbot__title">
             <div class="chatbot__items"></div>
           </div>
           <div class="chatbot__footer">
-            <input class="chatbot__input" type="text" disabled placeholder="Reply to PRMG">
+            <input class="chatbot__input" type="text" disabled placeholder="Reply to Adrian Webb">
             <button class="chatbot__submit" type="button" disabled></button>
           </div>`;
 
